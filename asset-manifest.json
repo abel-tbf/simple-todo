@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.754ebb54.css",
-    "main.js": "/static/js/main.3277ce40.js",
-    "index.html": "/index.html",
-    "main.754ebb54.css.map": "/static/css/main.754ebb54.css.map",
-    "main.3277ce40.js.map": "/static/js/main.3277ce40.js.map"
+    "main.css": "/abel-tbf.github.io/simple-todo,/static/css/main.754ebb54.css",
+    "main.js": "/abel-tbf.github.io/simple-todo,/static/js/main.eb2f8b10.js",
+    "index.html": "/abel-tbf.github.io/simple-todo,/index.html",
+    "main.754ebb54.css.map": "/abel-tbf.github.io/simple-todo,/static/css/main.754ebb54.css.map",
+    "main.eb2f8b10.js.map": "/abel-tbf.github.io/simple-todo,/static/js/main.eb2f8b10.js.map"
   },
   "entrypoints": [
     "static/css/main.754ebb54.css",
-    "static/js/main.3277ce40.js"
+    "static/js/main.eb2f8b10.js"
   ]
 }
