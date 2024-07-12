@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
-import styled, {ThemeContext} from 'styled-components';
+import styled, {ThemeContext, DefaultTheme} from 'styled-components';
+import LightTheme from '../../themes/light';
 import Toggle from './Toggle';
 import {Link as ReactRouterDomLink, useLocation} from 'react-router-dom';
 
@@ -79,7 +80,7 @@ const MobileMenuIcon = styled.div`
 export default function Header() {
   const {pathname} = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const {id, setTheme} = useContext(ThemeContext);
+  const {id, setTheme} = useContext(ThemeContext)!; // exclamation always defined
 
   return(
     <HeaderWrapper>
@@ -92,7 +93,7 @@ export default function Header() {
         <StyledLink to="/" isActive={pathname === '/'}>
           Home
         </StyledLink>
-        <Toggle isActive={id === 'dark'} onToggle={setTheme} />
+        <Toggle isActive={id === 'dark'} onToggle={setTheme} />)
       </Menu>
     </HeaderWrapper>
   );

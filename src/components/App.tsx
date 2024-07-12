@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LightTheme from '../themes/light';
 import DarkTheme from '../themes/dark';
 import Home from './pages/Home';
@@ -32,9 +32,9 @@ function App() {
     }}}>
       <GlobalStyle/>
       <Router>
-        <Switch>
-          <Route exact={true} path="/" component={Home}/>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
       </Router>
     </ThemeProvider>
   );
